@@ -55,7 +55,7 @@ export function getDefaultConfig(): PluginsServerConfig {
         EVENT_OVERFLOW_BUCKET_REPLENISH_RATE: 1.0,
         KAFKA_BATCH_START_LOGGING_ENABLED: false,
         SKIP_UPDATE_EVENT_AND_PROPERTIES_STEP: false,
-        CONSUMER_BATCH_SIZE: 500,
+        CONSUMER_BATCH_SIZE: 2000,
         CONSUMER_MAX_HEARTBEAT_INTERVAL_MS: 30_000,
         CONSUMER_LOOP_STALL_THRESHOLD_MS: 60_000, // 1 minute - consider loop stalled after this
         CONSUMER_LOOP_BASED_HEALTH_CHECK: false, // Use consumer loop monitoring for health checks instead of heartbeats
@@ -90,7 +90,7 @@ export function getDefaultConfig(): PluginsServerConfig {
         TASK_TIMEOUT: 30,
         TASKS_PER_WORKER: 10,
         INGESTION_CONCURRENCY: 10,
-        INGESTION_BATCH_SIZE: 500,
+        INGESTION_BATCH_SIZE: 2000,
         INGESTION_OVERFLOW_ENABLED: false,
         INGESTION_FORCE_OVERFLOW_BY_TOKEN_DISTINCT_ID: '',
         INGESTION_OVERFLOW_PRESERVE_PARTITION_LOCALITY: false,
